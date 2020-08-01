@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Building A Computer</title>
+<title>Marcelo Escobedo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-server,.fa-desktop,.fa-microchip,.fa-database,.fa-plug,.fa-film,.fa-hdd-o {font-size:200px}
+
+.fa-exclamation-triangle{
+  color: orange;
+}
+
+  li {
+    padding-top: 10px;
+  }
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f44336;
+  overflow-x: hidden;
+  padding-top: 40px;
+
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  width: 200px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media (max-width: 767px) {
+    #navbar{
+        display:none;
+    }
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<nav class="sidenav" id="navbar">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <header>
+      <center>
+      Item List
+      </center>
+    </header>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#Computer_Case" class="w3-button w3-padding-large w3-white nav-link" id="nav-link"> Computer Case</a>
+    <a href="#Motherboard" class="w3-button w3-padding-large w3-white nav-link" id="nav-link">Motherboard</a>
+    <a href="#CPU_Chip" class="w3-button w3-padding-large w3-white nav-link" id="nav-link">CPU Chip</a>
+    <a href="#Graphics_Card" class="w3-button w3-padding-large w3-white nav-link" id="nav-link">Graphics Card</a>
+    <a href="#Memory" class="w3-button w3-padding-large w3-white nav-link" id="nav-link">Memory</a>
+    <a href="#Power_Supply" class="w3-button w3-padding-large w3-white nav-link" id="nav-link">Power Supply</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Building Your Next Desktop</h1>
+  <p class="w3-xlarge"><small>By: Marcelo Escobedo</small></p>
+</header>
+
+<!-- First Grid -->
+<main id="main-doc">
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <section class="main-section" id="Computer_Case">
+        <header><h5 class="w3-padding-32">Computer Case</h5></header>
+        <code></code>
+        <p><center>Three Things</center></p>
+           <ol>
+              <li> They need to support and shield the components. They need to be strong and take the impact so the hardware doesn't. A case that gets its strength from plastic isn't good enough to hold up a modern GPU. A steel case with a serious bent isn't going to line things up right and can cause stress cracks in the circuit board.</li>
+              <li> They need to move air. A lot of OEM cases provided only the very minimum in air flow (designed that way to sound quieter in the store) and with the fans being old, they provide even less. Further, putting a high wattage computer in an OEM case that housed a budget PC probably won't even have enough fan openings to cool it down.</li>
+              <li> It should look good. What looks good is different for different people. If you are fine with a beige case and it have enough air flow and structural ability, thats great. But for most people, having something as large as a desktop setting on their desk, it makes sense to spend $30 to get one that looks good.</li>
+            </ol>
+
+          <p class="w3-text-grey">Lots of people will tell you that it's crucial to have an expensive case. It's not. If you're running a standard set of components and don't plan on water cooling or extreme overclocking, then just about any case will do.</p>
+      </section>
+    </div>
+
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-hdd-o w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-server w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <section class="main-section" id="Motherboard">
+        <header>
+          <h5 class="w3-padding-32">Motherboard</h5>
+        </header>
+        <code></code>
+        <p><center>What You Pay For On A Motherboard</center></p>
+           <ul>
+              <li> Chipset/functionality - the more you pay, the more functionality you get, this goes for things like SLI compatibility, the number of PCIe slots you have, the amount of RAM it can handle, the amount of overclocking, and the number of and selection of I/O ports.</li>
+              <li> Size - Full ATX motherboards tend to be more expensive than mATX but this is normally because mATX have less functionality. An mATX with the same functionality as an equivalent full size ATX will be a little more expensive</li>
+              <li> Build quality/Name Brand - a cheap motherboard of a brand you have never heard of before will likely be of lower build quality than one made by a well known mobo manufacturer, although sometimes you do pay for the name without the build quality.</li>
+              <li> Aesthetics - of course, a basic motherboard with basic heat sinks is going to be much cheaper than a "Gaming" branded mobo with snazzy looking heat sinks and RGB.</li>
+            </ul>
+        <p class="w3-text-grey">Realistically, all you really need to do is make sure the motherboard does everything you need it to, and has a decent warranty.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <section class="main-section" id="CPU_Chip">
+        <header>
+          <h5 class="w3-padding-32">CPU Chip</h5>
+        </header>
+        <code></code>
+
+        <p><center>Three main factors are taken into account to find how powerful a CPU is</center></p>
+
+        <ol>
+           <li> Cores: To put it simply, a core is like another processor inside your CPU, and these contain threads. Usually there is 1 core to a thread, but in certain Intel CPUs, hyperthreading creates "fake" or virtual cores that aren't quite as good as real ones, but still help. Most things such as games can't take advantage of more than 2 cores, so that's where the next two factors come into play. </li>
+           <li> Clock rate/speed: CPU clocks are measured in GHz (Formerly KHz & MHz), and are the speed in which they operate. These clocks can be increased on certain CPU's at the cost of extra heat. A higher clock speed usually means a hotter CPU, so third-party CPU coolers can be installed to make the CPU cooler, and sometimes even quieter. AMD's clock speeds are usually much higher than Intel's, and this leads to a popular misconception that they are better, when in fact they are usually worse, due to the last factor. </li>
+           <li> Instructions Per Cycle: IPC, is one of the most important factors in determining CPU power. To try and explain it best, imagine 2 different CPU's. CPU 1 is running at 50 MHz with 1.5 IPC, while CPU is running at 50MHz with 1 IPC. Each instruction completes the operations that your program needs in order to function, thus, completing the most in the least amount of time is crucial.  </li>
+         </ol>
+
+
+
+        <p class="w3-text-grey"> In a computer system, a chipset is a set of electronic components in an integrated circuit that manages the data flow between the processor, memory and peripherals</p>
+      </section>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-microchip w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-film w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <section class="main-section" id="Graphics_Card">
+        <header>
+          <h5 class="w3-padding-32">Graphics Card</h5>
+        </header>
+        <code></code>
+        <p><center>Clockspeed, Memory speed, and VRam</center></p>
+        <ul>
+           <li>Benchmarks are the best way to evaluate GPU performance. The inner workings of a GPU are fantastically complicated, to the point where you could just assume they run on magic and not be far off (in actual fact they run mostly on matrix multiplication and vectors...but that's just splitting hairs). Even if you understand in excruciating detail how they work, the only way to truly gauge performance is to test them. </li>
+           <li>The way I go about it is to first look at benchmarks between different models of card to find the highest performance in my price point. If you can't narrow it down to just one model of GPU,look for detailed benchmarks comparing the ones you're considering.</li>
+           <li>The final round is to look at comparisons between different vendor versions of a given model. In these benchmarks you'll be able to get information about relative performance, along with other information like cooler effectiveness and how noisy the card is.</li>
+         </ul>
+
+        <p class="w3-text-grey">AMD and Nvidia cards are built around different design methodologies to do the same overall task, and sometimes the way a game is designed will give a natural advantage to one or the other, and sometimes it will all cancel out.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- Fifth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <section class="main-section" id="Memory">
+        <header>
+          <h5 class="w3-padding-32">Memory</h5>
+        </header>
+
+        <code></code>
+        <p><center>SSD's Are the Way To Go</center></p>
+
+        <ul>
+           <li> Over the past decade, there have been huge advances in processor, memory, chipset and graphics performance. So the main bottleneck in performance for most mainstream computers (for general tasks, not gaming) is the spinning hard drive. Even with the improvements from IDE to SATA and its revisions, spinning hard drives just can't saturate the bandwidth available. </li>
+           <li> If you have room in the budget, definitely get an SSD. The SSD market as a whole has come a long way in a few years so that it's difficult to get a bad unit. But I would still stick with the major players (Sandisk, Seagate, Crucial, Samsung, Intel).</li>
+
+        </ul>
+
+        <p class="w3-text-grey">The only thing that will be faster with a SSD is file reading/writing, so for example loading a heavy game, booting an OS, launching a big application. But it won't make any program faster since most programs don't write and read files on disk as they're running.
+
+</p>
+      </section>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-database w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sixth Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-plug w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <section class="main-section" id="Power_Supply">
+        <header>
+            <h5 class="w3-padding-32">Power Supply</h5>
+        </header>
+        <code></code>
+        <p><center> <p class="fa fa-exclamation-triangle"></p>
+          MORE WATTAGE ≠ BETTER PSU!
+        </center></p>
+        <ul>
+           <li>Always read reviews of a particular PSU to find out the amp ratings it has, particularly on the most important 12V rail, how stable its voltage and power output is when measured with an oscilloscope, and whether this exceeds ATX standards. Some cheap brands simply add up what their power supply can deliver on each rail (say 50W on 3.3V, 100W on 5V and 400W on 12V) and call it a 550W PSU, whereas more reliable, well known, expensive brands can sell a PSU rated 550W, which can still output 600W just on the 12V rail (this one powers the motherboard, CPU, GFX card etc.). </li>
+           <li>Typically, good quality PSUs tend to cost around 10% of their wattage. Like $60(USD) for a 600W. Exceptional PSUs tend to cost about 50% more, but just because one unit costs more doesn't mean it's actually better. Sales can change things drastically, so keep a watchful eye out for great deals on great products. </li>
+         </ul>
+
+
+        <p class="w3-text-grey"> Never cut costs on a the power supply unit. A good one will last you for a few builds, and through many upgrades. A cheap one can fry your whole build.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: “Did you know that everytime you sigh,a little bit of happiness escapes?” </h1>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p> A Project Done For <a href="https://www.freecodecamp.org/marmar95" target="_blank">FreeCodeCamp</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
